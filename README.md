@@ -1,8 +1,8 @@
-#User Denormalization Pipeline with Spark, Delta Lake & Kafka
+### User Denormalization Pipeline with Spark, Delta Lake & Kafka ###
 
 This project implements a real-time user profile enrichment pipeline designed for scalable data engineering workloads. It leverages Delta Lake Change Data Capture (CDC) to track incremental updates, applies denormalization logic across multiple related datasets, and streams enriched user profiles to Apache Kafka for downstream services.
 
-#Features
+### Features ###
 
 * CDC with Delta Lake
 
@@ -43,7 +43,7 @@ core/denormalization_sql.py – SQL logic for user profile enrichment.
 core/logger.py – structured logging.
 
 
-#Repository Structure
+### Repository Structure ###
 .
 ├── index.py                        # Main entrypoint, orchestrates pipeline
 └── core/
@@ -51,7 +51,7 @@ core/logger.py – structured logging.
     ├── denormalization_sql.py      # SQL-based denormalization logic
     └── logger.py                   # Logging setup
 
-#Data Flow
+### Data Flow ###
 
 Delta Lake CDC – Polls Delta tables on S3 for incremental updates.
 
@@ -63,7 +63,7 @@ Caching – Optimizes repeated queries for high-traffic datasets.
 
 Kafka Streaming – Publishes enriched profiles to Kafka for downstream services.
 
-#Tech Stack
+### Tech Stack ### 
 
 Apache Spark – distributed processing & SQL.
 

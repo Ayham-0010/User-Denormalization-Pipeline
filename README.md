@@ -8,7 +8,9 @@ This project implements a near-real-time user profile enrichment pipeline design
 
 Efficiently captures only the incremental changes from source tables using Delta Lake’s table_changes.<br>
 Checkpoint tables ensure reliable recovery and exactly-once semantics.<br>
-User Denormalization.<br>
+
+* User Denormalization
+
 Consolidates scattered user information (accounts, education, work experience, tags, etc.) into a single enriched view.<br>
 Nested JSON-like structures provide a clean and consumer-friendly schema.<br>
 

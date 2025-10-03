@@ -1,6 +1,6 @@
 ### User Denormalization Pipeline with Spark, Delta Lake & Kafka ###
 
-This pipeline implements a near-real-time user profile enrichment pipeline designed for scalable data engineering workloads. It leverages Delta Lake Change Data Capture (CDC) to track incremental updates, applies denormalization logic across multiple related datasets, and streams enriched user profiles to Apache Kafka for downstream services.
+This project implements a near-real-time user profile enrichment pipeline designed for scalable data engineering workloads. It leverages Delta Lake Change Data Capture (CDC) to track incremental updates, applies denormalization logic across multiple related datasets, and streams enriched user profiles to Apache Kafka for downstream services.
 
 ### Features ###
 

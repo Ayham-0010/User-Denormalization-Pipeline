@@ -41,15 +41,13 @@ Delta Lake → CDC Polling<br>
 Delta tables on S3 are scanned for incremental changes.
 
 CDC → User ID Extraction<br>
-Changed user IDs are collected and deduplicated.
+every user id correlated with changed recored (inserted, updated, deleted,.... ) are collected and deduplicated.
 
 User IDs → Denormalization<br>
-IDs are joined across related datasets to enrich user profiles.
+the collected IDs are used in the join SQL statement across related datasets to enrich user profiles through denormalization.
+Caching is implemented to pre-load and store all the records required by the complex SQL query with multiple joins, ensuring that subsequent executions run significantly faster and overall performance is greatly improved.
 
-Denormalized Data → Caching<br>
-Frequently accessed datasets are cached to optimize query performance.
-
-Cached Profiles → Kafka<br>
+Denormalized data → Kafka<br>
 Enriched user profiles are published to Kafka topics for downstream services.
 
 ### Tech Stack ### 

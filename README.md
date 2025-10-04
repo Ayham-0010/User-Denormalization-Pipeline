@@ -28,7 +28,7 @@ Deduplication logic ensures minimal processing of repeated IDs.<br>
 
 * Modular Codebase
 
-Separation of concerns:
+Separation of concerns:<br>
 index.py – pipeline orchestration.<br>
 core/delta_lake_to_kafka.py – CDC extraction & Kafka writers.<br>
 core/denormalization_sql.py – SQL logic for user profile enrichment.<br>

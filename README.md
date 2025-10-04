@@ -19,7 +19,9 @@ Nested JSON-like structures provide a clean and consumer-friendly schema.<br>
 
 Converts Spark DataFrames into Kafka key/value messages.<br>
 Streams denormalized user profiles to downstream consumers in near real-time.<br>
-Performance Awareness<br>
+
+* Performance Awareness
+
 Frequently reused DataFrames are cached to reduce redundant queries and accelerate joins.<br>
 Deduplication logic ensures minimal processing of repeated IDs.<br>
 

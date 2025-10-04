@@ -25,7 +25,10 @@ Streams denormalized user profiles to downstream consumers in near real-time.<br
 Frequently reused DataFrames are cached to reduce redundant queries and accelerate joins.<br>
 Deduplication logic ensures minimal processing of repeated IDs.<br>
 
-
+* Logging
+  
+writing logs to provide visibility into processing and assist with troubleshooting.
+  
 * Modular Codebase
 
 Separation of concerns:<br>

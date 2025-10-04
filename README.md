@@ -37,11 +37,20 @@ core/logger.py – structured logging.<br>
 
 ### Data Flow ###
 
-Delta Lake CDC – Polls Delta tables on S3 for incremental updates.<br>
-User ID Extraction – Collects and deduplicates changed user IDs.<br>
-Denormalization – Joins across multiple related datasets to enrich user profiles.<br>
-Caching – Optimizes repeated queries for high-traffic datasets.<br>
-Kafka Streaming – Publishes enriched profiles to Kafka for downstream services.<br>
+Delta Lake → CDC Polling<br>
+Delta tables on S3 are scanned for incremental changes.
+
+CDC → User ID Extraction<br>
+Changed user IDs are collected and deduplicated.
+
+User IDs → Denormalization<br>
+IDs are joined across related datasets to enrich user profiles.
+
+Denormalized Data → Caching<br>
+Frequently accessed datasets are cached to optimize query performance.
+
+Cached Profiles → Kafka<br>
+Enriched user profiles are published to Kafka topics for downstream services.
 
 ### Tech Stack ### 
 

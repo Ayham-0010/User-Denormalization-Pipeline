@@ -47,6 +47,7 @@ Python ,Pyspark<br>
 Apache Spark <br>
 Delta Lake<br>
 Apache Kafka.<br>
+Aiven Kafka Connector (for Opensearch indexing)<br>
 S3/Cloud Object Storage
 
 

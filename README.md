@@ -43,8 +43,8 @@ Kafka Streaming – Publishes enriched profiles to Kafka for downstream services
 
 ### Tech Stack ### 
 
-Python ,Pyspark
-Apache Spark 
+Python ,Pyspark<br>
+Apache Spark <br>
 Delta Lake<br>
 Apache Kafka.<br>
 S3/Cloud Object Storage

@@ -44,7 +44,7 @@ CDC → User ID Extraction<br>
 every user id correlated with changed recored (inserted, updated, deleted,.... ) are collected and deduplicated.
 
 User IDs → Denormalization<br>
-the collected IDs are used in the join SQL statement across related datasets to enrich user profiles through denormalization.
+the collected IDs are used in the join SQL statement across related datasets to enrich user profiles through denormalization.<br>
 Caching is implemented to pre-load and store all the records required by the complex SQL query with multiple joins, ensuring that subsequent executions run significantly faster and overall performance is greatly improved.
 
 Denormalized data → Kafka<br>

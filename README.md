@@ -43,8 +43,12 @@ Kafka Streaming – Publishes enriched profiles to Kafka for downstream services
 
 ### Tech Stack ### 
 
-Apache Spark – distributed processing & SQL.<br>
-Delta Lake – reliable CDC and ACID guarantees.<br>
-Apache Kafka – streaming integration for real-time pipelines.<br>
-Python – pipeline orchestration and modular design.<br>
+Python ,Pyspark
+Apache Spark 
+Delta Lake<br>
+Apache Kafka.<br>
+S3/Cloud Object Storage
+
+
+
 
